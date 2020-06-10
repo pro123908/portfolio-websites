@@ -1,0 +1,56 @@
+.etq-amsterdam-home-page-landing {
+  height: 100vh;
+
+  background: url(../../../../assets/ETQAmsterdam/HomePage/Landing/background.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  color: $color-white;
+  position: relative;
+  margin-bottom: 900px;
+
+  .landing__text {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 2;
+
+    &--primary {
+      font-size: 3rem;
+      letter-spacing: 1px;
+      transition: letter-spacing 0.2s;
+      animation: fadeIn 1.5s ease-in;
+
+      cursor: pointer;
+
+      &:hover {
+        letter-spacing: 3px;
+      }
+    }
+
+    &--secondary {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      font-weight: $medium-weight;
+      transition: letter-spacing 0.2s;
+
+      cursor: pointer;
+      animation: fadeIn 1s ease-in;
+
+      &:hover {
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
